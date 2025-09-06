@@ -207,7 +207,8 @@ public class EmployeeManager {
         
  } while(validType);
  switch(staffType){
-     case 1:houseKeeping.add(new housKeeping(salary ));
+     case 1:houseKeeping.add(new housKeeping(staffID,salary,schedule));
+     
  }
  {
     
