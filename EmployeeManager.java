@@ -180,7 +180,7 @@ public class EmployeeManager {
                
        } 
    
-        }
+  }
         
     
 
@@ -204,11 +204,44 @@ public class EmployeeManager {
             System.out.println("Please enter the number !!");
             return;
         }
-        
- } while(validType);
- switch(staffType){
-     case 1:houseKeeping.add(new housKeeping(staffID,salary,schedule));
-     
+  switch (staffType){
+    case 1:
+    employeeList.addAll(EmployeeManager.getHouseKeeping());
+    
+        for (Employee emp1 : employeeList){
+            System.out.println(emp1);
+            }
+            break;
+    case 2:
+        employeeList.addAll(EmployeeManager.getDeskStaff());
+        for(Employee emp1 : employeeList){
+            System.out.println(emp1);
+        }        
+        break;
+    
+    case 3:
+            employeeList.addAll(EmployeeManager.getManager());
+            for(Employee emp1 : employeeList){
+                System.out.println(emp1);
+
+            }
+            break;
+
+  }      
+if(employeeList.isEpmty()){
+    System.out.println("current employee record is em.pty !!!!!!");
+    return;
+}
+boolean valid = false;
+do {
+    scanner.netLine();
+    System.out.println("Entere the starr id:");
+    staffID = scanner.nextLine();
+}
+
+ }
+  
+
  }
  {
     
