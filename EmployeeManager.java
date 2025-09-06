@@ -208,6 +208,12 @@ public class EmployeeManager {
             return;
         }
         
+ } while(validType);
+ switch(staffType){
+     case 1:houseKeeping.adde()
  }
+ {
+    
+}
     
 }
