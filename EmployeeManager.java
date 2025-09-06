@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package assigment;
 import java.time.DateTimeException;
 import java.time.LocalTime;
@@ -210,7 +207,7 @@ public class EmployeeManager {
         
  } while(validType);
  switch(staffType){
-     case 1:houseKeeping.adde()
+     case 1:houseKeeping.add(new housKeeping(salary ));
  }
  {
     
